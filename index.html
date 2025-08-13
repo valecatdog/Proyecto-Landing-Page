@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page help</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!--EDITA LOS COMENTARIOS CUANDO HAGA FALTA (ej: cuando ya no haga falta algo xd)-->
@@ -11,22 +12,30 @@
     <!--barra de arriba. falta que le pongas lo que quieras-->
     <nav id="barra_arriba">
         <img>
-        <p>nombre del coso</p>
-        <a>Inicio</a>
-        <a>Info destacada</a>
-        <a>Suscribirse</a>
-        <a>Equipo</a>
-        <a>Footer</a>
+        <p href="#parte_portada">nombre del coso</p>
+        <a href="#parte_info">Inicio</a>
+        <a href="#parte_llamado_accion">Info destacada</a>
+        <a href="#parte_suscribirse">Suscribirse</a>
+        <a href="#parte_equipo">Equipo</a>
+        <a href="#parte_footer
+        ">Footer</a>
         <button>Comenzar</button>
     </nav>
 
     <!--la primera parte, portada. falta que le metas lo que le tengas que meter
     -->
     <main id="parte_portada">
+        <div class="parte_arriba_portada">
         <img>
-        <h1>¿Querés cosas baratas al mejor precio?</h1>
-        <p>Nada como (nombredelapagina) para conseguir una buena ganga<p>
+        <h1>¿Querés cosas baratas <br>al mejor precio?</h1>
+        <p id="p3">Nada como <br> (nombredelapagina) <br>para conseguir una buena ganga</p> 
         <button>Comenzar</button>
+        </div>
+        <div class="panel_abajo">
+        <p id="p1">Compra sin preocupaciones</p>
+        <p id="p2">y sin compromisos</p>
+        <h2></h2>
+        </div>
     </main>
 
     <!--aca va a estar la info de los productos-->
@@ -61,40 +70,107 @@
         </div>
     </section>
 
-    <section id="parte_llamado_accion">
-        <img>
 
-        <div>
+    <!--llamado a la accion-->
+    <section id="parte_llamado_accion">
+        <div class="image_acento">
             <p> Mira nuestro stock</p>
             <p>subtexto</p>
         </div>
 
-        <button>
+        <button id="boton_llamado">
             Échele un vistazo
         </button>
         
     </section>
 
+    <!--suscribirse-->
     <section id="parte_suscribirse">
         esto es transparente
-        <p>Suscribete para ser notificado cuando tengamos productos que puedan interesarte</p>
+        <p>Suscribete para ser notificado cuando tengamos productos que le interesen</p>
         <form>
-            
+            <input type="email" placeholder="Ingrese su email" required>
+            <button type="submit">Suscribirse</button>
         </form>
     </section>
 
-    <section id="parte_formulario">
-        <p>Comunicate con nosotros</p>
-        
-    </section>
 
+    <!--equipo-->
     <section id="parte_equipo">
+        <p>Hecho por</p>
+
+        <div id="contenedor_integrantes">
+            <div id="integrante_1">
+                <img>
+                <p>Correa Valentina</p>
+                <p>co-fundadora</p>
+            </div>
+
+            <div id="integrante_2">
+                <img>
+                <p>Arturo Sifredo</p>
+                <p>co-fundador</p>
+            </div>
+
+
+        </div>
     </section>
 
-    <footer>
+    <footer id="parte_footer">
+        <address id="footer_columna_datos_personales">
 
-        <address>
+            <img id="footer_logo">
+
+            <div id="footer_imagenes_redes_sociales">
+                <a href="https://es-es.facebook.com/login.php/" id="footer_facebook">
+                    <img>
+                </a>
+
+                <a href="https://www.instagram.com/accounts/login/" id="footer_ig">
+                    <img>
+                </a>
+
+                <a href="https://www.tiktok.com/login" id="footer_tiktok">
+                    <img>
+                </a>
+
+                <a href="https://x.com/i/flow/login?lang=es" id="footer_x">
+                    <img>
+                </a> 
+
+                <p>Información de contacto</p>
+                <p>Sifredo Artuto</p>
+                <p>asf@gmail.com</p>
+                <p>Correa Valentina</p>
+                <p>vpcc@gmail.com</p>
+            </div>
         </address>
+
+        <div id="footer_sobre_nosotros">
+
+            <p>SOBRE NOSOTROS</p>
+
+            <div id="footer_sobre_nosotros_links">
+                <a>Ir a la página</a>
+                <a>Soporte</a>
+                <a>Precios</a>
+            </div>
+        </div>
+
+        <div id="footer_legal">
+
+            <p>LEGAL</p>
+
+            <div id="footer_legal_link">
+                <a>Política de privacidad</a>
+                <a>Condiciones del servicio</a>
+                <a>Denuncia de infracciones</a>
+                <a>Acuerdos legales</a>
+            </div>
+        </div>
+
+        <a>No vender ni compartir mi información personal</a>
+
     </footer>
 </body>
 </html>

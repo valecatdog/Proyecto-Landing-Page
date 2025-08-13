@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Montserrat:wght@700&display=swap');
+
+
+/*son las variables que usan algunas cosas, no te asustes*/
+:root {
+  --bg: #f6f6ff;
+  --panel: #9e4d0f;
+  --card: #b68c52;
+  --card-2: #916f3f;
+  --accent: #ffd65a;
+  --placeholder: #9e4d0f;
+  --text: #0f1724;
+  --muted: #555;
+  --radius: 8px;
+}
+
+body {
+  margin: 0;
+  font-family:Inter, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  width: min(1100px, 94%);
+  margin: auto;
+}
+
+
+nav#barra_arriba {
+  position: sticky;
+  top: 0;
+  z-index: 100; /*el coso para que se quede por encima de los elementos or smt idk bleh */
+  background: url(imagenes/damascus-steel-texture-cloud-pattern-600nw-2155580929.PNG);
+  color: white;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav#barra_arriba img {
+  width: 48px;
+  height: 32px;
+  background: var(--accent);
+  border-radius: 6px;
+}
+
+nav#barra_arriba p {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+ 
+nav#barra_arriba button{
+  background: var(--accent);
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+}
+
+#parte_portada {
+  background: url(imagenes/fondo2_portada.avif);
+  background-size: cover;
+  padding: 30px 0;
+  height: 700px;
+  text-align: center;
+}
+
+#parte_portada h1 {
+  font-family: Montserrat, sans-serif;
+  position: relative;
+  display: block;
+  bottom: 30px;
+  font-size: 46px;
+  padding: 10px;
+  margin: 0;
+  color: #e5d97d;
+  background-color: #0f1724 ;
+  opacity: 0.8;
+}
+
+#parte_portada p {
+  color: var(--muted);
+  color: #eeb945;
+  position: relative;
+  bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #0f1724 ;
+  opacity: 0.8;
+}
+
+#parte_portada h2 {
+  color: #f3cf58;
+  background: url(imagenes/brown-concrete-wall-with-scratches-vector.jpg);
+  padding: 120px;
+  font-size: 46;
+  position: relative;
+  bottom: -150px;
+  background-size: cover;
+}
+
+#parte_portada button {
+  margin-top: 10px;
+  position: relative;
+  bottom: -120px;
+  width: 200px;
+  background: var(--accent);
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+}
+
+#parte_info {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.productos {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 18px;
+  margin: 18px auto;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  max-width: 1000px;
+}
+
+#parte_info .productos:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.productos img {
+  width: 260px;
+  height: 200px;
+  background: var(--placeholder);
+  border-radius: var(--radius);
+  flex-shrink: 0;
+}
+
+.productos p {
+  margin: 0 0 8px 0;
+}
+
+.productos button {
+  background: var(--accent);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 20px;
+  padding: 18px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+#parte_llamado_accion {
+  text-align: center;
+  margin: 5px;
+  background-color: var(--card);
+  border-radius: var(--radius);
+  height: 600px;
+  max-height: 900px;
+}
+
+.image_acento{
+  padding: 30px;
+  height: 100px;
+  background-color: var(--panel);
+ 
+}
+
+#boton_llamado{
+  padding: 15px;
+  width: 300px;
+  margin: 30px;
+  position: relative;
+  bottom: -300px;
+}
