@@ -1,17 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 /*son las variables que usan algunas cosas, no te asustes*/
+/* no te bases mucho en estos colores ya que no se usan mucho*/
 :root {
-  --bg: #f6f6ff;
   --panel: #9e4d0f;
   --card: #b68c52;
   --card-2: #916f3f;
-  --accent: #ffd65a;
+  --secundary: #5D4037;
+  --accent: #fcc111;
+  --mainTExt: #3E2723;
+  --secondaryText: #6D4C41;
   --placeholder: #9e4d0f;
   --text: #0f1724;
   --muted: #555;
-  --radius: 8px;
+  --radius: 4px;
+  --extraBold: 800;
+  --medium: 500;
+  --light:400;
 }
 
 body {
@@ -31,11 +39,12 @@ nav#barra_arriba {
   position: sticky;
   top: 0;
   z-index: 100; /*el coso para que se quede por encima de los elementos or smt idk bleh */
-  background: url(imagenes/damascus-steel-texture-cloud-pattern-600nw-2155580929.PNG);
+  background: url(imagenes/damascus-steel-texture-cloud-pattern-600nw-2155580929.PNG); /* un patron damasco usado para la barra de navegacion, no pega mucho */
   color: white;
   padding: 10px 18px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -60,61 +69,108 @@ nav#barra_arriba button{
 }
 
 #parte_portada {
-  background: url(imagenes/fondo2_portada.avif);
+  background: url(imagenes/fondo2_portada.avif);  /* una imgen de la parte de arriba de una mesa de madera con varios objetos, laptop, celular, da un toque refinado con estetica natural moderna y limpia */
   background-size: cover;
+  display: flex;                  
+  justify-content: center;       
+  align-items: center;   
+  bottom: 30px;
   padding: 30px 0;
-  height: 700px;
-  text-align: center;
+  height: 400px;
+  text-align: start;
+}
+
+.parte_arriba_portada{
+  position: relative;
+  bottom: -20px;
 }
 
 #parte_portada h1 {
   font-family: Montserrat, sans-serif;
+  font-weight: var(--extraBold);
   position: relative;
   display: block;
   bottom: 30px;
   font-size: 46px;
   padding: 10px;
   margin: 0;
-  color: #e5d97d;
+  border-radius: var(--radius);
+  color: var(--accent);
   background-color: #0f1724 ;
   opacity: 0.8;
+  position: relative;
+  left: 30px;
 }
 
-#parte_portada p {
-  color: var(--muted);
-  color: #eeb945;
+#p3{
+  font-family: Roboto Condensed, sans-serif;
+  font-weight: var(--medium);
+  color: gainsboro;
   position: relative;
   bottom: 20px;
   padding: 10px;
-  font-size: 16px;
-  background-color: #0f1724 ;
-  opacity: 0.8;
+  font-size: 24px;
+  position: relative;
+  left: 30px;
+  bottom: 30px;
+  
 }
 
-#parte_portada h2 {
-  color: #f3cf58;
-  background: url(imagenes/brown-concrete-wall-with-scratches-vector.jpg);
-  padding: 120px;
-  font-size: 46;
+#p1{
+  font-family: Montserrat, sans-serif;
+  font-weight: var(--extraBold);
+  font-size: 32px;
+  color: gainsboro;
+  text-align: center;
   position: relative;
-  bottom: -150px;
-  background-size: cover;
+  bottom: -35px;
+  z-index: 30;
 }
+#p2{
+  font-family: Montserrat, sans-serif;
+  font-weight: var(--medium);
+  font-size: 20px;
+  color: var(--accent);
+  text-align: center;
+  position: relative;
+  bottom: -20px;
+  z-index: 30;
+}
+
 
 #parte_portada button {
+  font-family: Montserrat, sans-serif;
+  font-weight: var(--medium);
+  font-size: 18px;
   margin-top: 10px;
   position: relative;
-  bottom: -120px;
-  width: 200px;
+  width: 150px;
+  height: 50px;
   background: var(--accent);
   border: none;
   padding: 10px 20px;
   border-radius: var(--radius);
+  position: relative;
+  left: 30px;
+  bottom: 30px;
 }
+
+.panel_abajo{
+  background: url(imagenes/brown-concrete-wall-with-scratches-vector_53876-143109.avif); /* una imagen de unh fondo marron oscuro medio grainy*/
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  bottom: 32px;
+  text-align: center;
+}
+
+/* aca para abajo es donde no hay casi nada y hay que mejorar*/
 
 #parte_info {
   padding: 20px 0;
   text-align: center;
+  background: url(imagenes/vintage-smooth-textured-paper-background_53876-103928.avif);
+  background-size: cover;
 }
 
 .productos {
