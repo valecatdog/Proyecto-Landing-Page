@@ -38,7 +38,7 @@ body {
 nav#barra_arriba {
   position: sticky;
   top: 0;
-  z-index: 100; /*el coso para que se quede por encima de los elementos or smt idk bleh */
+  z-index: 100; 
   background: url(imagenes/damascus-steel-texture-cloud-pattern-600nw-2155580929.PNG); /* un patron damasco usado para la barra de navegacion, no pega mucho */
   color: white;
   padding: 10px 18px;
@@ -69,8 +69,8 @@ nav#barra_arriba button{
 }
 
 #parte_portada {
-  background: url(imagenes/fondo2_portada.avif);  /* una imgen de la parte de arriba de una mesa de madera con varios objetos, laptop, celular, da un toque refinado con estetica natural moderna y limpia */
-  background-size: cover;
+  background: url(imagenes/fondo2_portada.avif); 
+  background-size: cover; 
   display: flex;                  
   justify-content: center;       
   align-items: center;   
@@ -167,14 +167,22 @@ nav#barra_arriba button{
 /* aca para abajo es donde no hay casi nada y hay que mejorar*/
 
 #parte_info {
+  position: relative;
+  bottom: 32px;
   padding: 20px 0;
   text-align: center;
-  background: url(imagenes/vintage-smooth-textured-paper-background_53876-103928.avif);
+  background: url(imagenes/interior-sala-estar-fondo-pared-blanca-vacia-diseno-minimalista-representacion-3d_43151-688.avif);
   background-size: cover;
 }
 
+#parte_info h2{
+  font-family: Montserrat, sans-serif;
+  font-weight: var(--extraBold);
+  color: var(--accent);
+  font-size: 36px;
+}
 .productos {
-  background: var(--card);
+  background: white;
   border-radius: var(--radius);
   padding: 18px;
   margin: 18px auto;
@@ -182,6 +190,7 @@ nav#barra_arriba button{
   gap: 18px;
   align-items: center;
   max-width: 1000px;
+  opacity: 0.9;
 }
 
 #parte_info .productos:nth-child(even) {
@@ -191,11 +200,19 @@ nav#barra_arriba button{
 .productos img {
   width: 260px;
   height: 200px;
-  background: var(--placeholder);
+  background-size: cover;
   border-radius: var(--radius);
   flex-shrink: 0;
 }
-
+.img3{
+  background: url(imagenes/porto-portugal-april-27-2023-600nw-2294278297.webp);
+}
+.img1{
+  background: url(imagenes/img_7191-1.jpeg);
+}
+.img2{
+  background: url(imagenes/images-cds.jpeg);
+}
 .productos p {
   margin: 0 0 8px 0;
 }
@@ -207,29 +224,43 @@ nav#barra_arriba button{
   border-radius: 8px;
 }
 
-/* FOOTER */
-footer {
-  margin-top: 20px;
-  padding: 18px 0;
-  text-align: center;
-  color: var(--muted);
-  font-size: 13px;
-}
-
+/* se ve jodidamente horrible pero no doy mas , me estoy muriendo del sueño */
 #parte_llamado_accion {
   text-align: center;
-  margin: 5px;
-  background-color: var(--card);
+  background: url(imagenes/8grL.gif);
+  background-size: 90%;
   border-radius: var(--radius);
-  height: 600px;
   max-height: 900px;
+  position: relative;
+  width: 90%;
+    height: 400px;
+    margin: 60px auto;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 8px;
 }
 
 .image_acento{
   padding: 30px;
   height: 100px;
-  background-color: var(--panel);
+  background-color: #8f7c74;
+  position: relative;
+  bottom: 20px;
  
+}
+
+#parte_llamado_accion h2{
+  font-family: Montserrat, sans-serif;
+  font-weight: var(--extraBold);
+  color: var(--accent);
+  font-size: 36px;
+  position: relative;
+  bottom: 20px;
+}
+
+#parte_llamado_accion p{
+  position: relative;
+  bottom: 30px;
 }
 
 #boton_llamado{
@@ -237,5 +268,180 @@ footer {
   width: 300px;
   margin: 30px;
   position: relative;
-  bottom: -300px;
+  bottom: -50px;
+  background-color: var(--accent);
+  border-radius: var(--radius);
+  border: none;
+}
+
+
+#contenedor_integrantes {
+    width: 90%;
+    height: 490px;
+    margin: 60px auto;
+    border: 2px solid black;
+    border-radius: 8px;
+    background: url(imagenes/84d87eb7e536135161c55887d878d44b.gif);
+    background-size: cover;
+    text-align: center;
+}
+
+
+#contenedor_integrantes > p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: -0px;
+}
+
+#jache1{
+ font-family: Montserrat, sans-serif;
+font-weight: var(--extraBold);
+font-size: 20px;
+
+}
+  
+.integrantes {
+  /* Contenedor de integrantesas */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#integrante_1, #integrante_2 {
+    background: white;
+    border: 1px solid #aaa;
+    padding: 15px;
+    border-radius: 6px;
+    width: 200px;
+    text-align: center;
+}
+
+
+#integrante_1 img, #integrante_2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+#integrante_1 p:nth-of-type(4),
+#integrante_2 p:nth-of-type(4) {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* parecido a como funciona un array en java, selecciona el quinto elemento <p> dentro de un mismo contenedor padre, ::-webkit-textfield-decoration-container*/
+#integrante_1 p:nth-of-type(5),
+#integrante_2 p:nth-of-type(5) {
+    font-style: italic;
+    color: #555;
+    margin: 0;
+}
+
+
+.frase-equipo {
+    margin-top: 20px;
+    font-style: italic;
+    color: #111211;
+}
+
+.Hechopoh{
+  position: relative;
+  bottom: 25px;
+ padding: 20px;
+}
+
+.imag_ac{
+  background-color: rgb(223, 223, 223);
+  height: 50px;
+  width: 98%;
+  opacity: 0.5;
+  border-radius: 3px;
+  margin: 5px;
+}
+
+/* Footer general */
+#parte_footer {
+    background-color: #222;   
+    color: #eee;            
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: Arial, sans-serif;
+}
+
+
+#parte_footer .footer_contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+#parte_footer .footer_columna {
+    flex: 1;
+    min-width: 200px;
+}
+
+
+#parte_footer .footer_columna p:first-child {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+    /* Links dentro de cada columna smth*/
+#parte_footer a {
+    display: block;
+    color: #bbb;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.3s;
+    font-size: 0.95em;
+}
+
+#parte_footer a:hover {
+    color: #fff;
+}
+
+
+#footer_imagenes_redes_sociales {
+    margin: 15px 0;
+}
+
+#footer_imagenes_redes_sociales a img {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: opacity 0.3s;
+}
+
+#footer_imagenes_redes_sociales a img:hover {
+    opacity: 0.7;
+}
+
+/* coso contacto */
+#footer_columna_datos_personales p {
+    margin: 4px 0;
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+
+#parte_footer .footer_bottom {
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 0.85em;
+    color: #aaa;
+}
+
+#footer_facebook{
 }
